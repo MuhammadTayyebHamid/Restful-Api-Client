@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,19 +9,278 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form select[name="dialingCode"] {
+  width: 30%; /* Adjust width for dialing code input */
+  margin-top: 8px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.7em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="mobileNumber"] {
+  width: 60.5%; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 1.8em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="emailAddress"] {
+  width: 92.3%; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 1.8em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="title"] {
+  width: 19.6em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="firstName"]{
+  width: 9em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="lastName"]{
+  width: 9em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="address"]{
+  width: 19.6em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="city"]{
+  width: 9em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="state"]{
+  width: 9em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+form input[name="zipcode"]{
+  width: 19.6em; /* Adjust width for mobile number input */
+  border: 1px solid #bdbdbd;
+  border-radius: 0.2em;
+  height: 2.5em;
+  padding: 0.4em 0.6em;
+  font-size: inherit;
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="title"]:focus,
+input[type="firstName"]:focus,
+input[type="lastName"]:focus,
+input[type="address"]:focus,
+input[type="city"]:focus,
+input[type="state"]:focus,
+input[type="zipcode"]:focus,
+select:focus {
+  border : 2px solid #444bc9;
+  outline: none;
+}
+
+form .mobile-inputs {
+  display: flex;
+  gap: 7px;
+}
+
+form .row{
+  display: flex;
+  gap: 7px;
+}
+
+.pin-inputs{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pin-input{
+  width: 30px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 2px #e5e5e5;
+  margin-bottom: 1rem;
+}
+
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%; 
+}
+
+.pinInput{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; /* Ensure container covers the full viewport height */
+  background-color: #f0f0f0; /* Background color for the container */
+}
+
+.left-side {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 150px;
+}
+
+.right-side {
+  /*background-color: #336EFF; /* Replace this with your desired color*/
+  background: linear-gradient(to bottom, #0c266b, #aac3d8);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 150px;
+}
+
+.form input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.form button {
+  margin-top: 30px;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border:#336EFF;
+  border-radius: 3px;
+  border-width: 10px;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input{
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid;
+  border-color: cadetblue;
+  border-radius: 6px;
+
+}
+
+.label{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.result{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.button-row{
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.button{
+  padding: 5px 15px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:400;
+  text-align: left;
+}
+
+.error-box {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 3px;
+  width: 50%;
+  display: flex;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
